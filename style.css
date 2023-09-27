@@ -1,0 +1,259 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+ }
+ body{
+    background: rgb(207, 139, 194);
+    overflow: hidden;
+ }
+ .container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+ }
+ .container .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+ }
+ .container .header:before{
+    content: "ADIDAS";
+    position: absolute;
+    top:58%;
+    left: 57%;
+    color: rgb(243, 234, 241,0.555);
+    font-size: 150px;
+    letter-spacing: 5px;
+    opacity: 0.4;
+    z-index: -1;
+
+ }
+ .container .header i{
+    color: #fff;
+    cursor: pointer;
+ }
+ .container .header p{
+    color: #fff;
+    font-weight: normal;
+    cursor: pointer;
+    font-size: 25px;
+
+ }
+ .container .header .logo{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+ }
+.container .header .logo .logo-two{
+  height: 2px;
+  margin-bottom: 10px;
+}
+ .container .header .line{
+    display: block;
+    width: 45px;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 4px;
+    margin-right: 4px;
+
+ }
+ /* ROW-SECTİON */
+ .container .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    
+ }
+ .container .row .col-2{
+    flex-basis: 50%;
+    min-width: 400px;
+ }
+.container .row .col-2 h1{
+    color: #fff;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    margin: 25px 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container .row .col-2 h1 span{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+.container .row .col-2 p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+    font-size: 14px;
+    line-height: 30px;
+}
+.container .row .col-2 .btn{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: inline;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 20px;
+    background-color: rgb(163, 94, 157) ;
+    border-radius: 20px;
+    margin-top: 100px;
+    font-weight: bold;
+    font-size:15px;
+    transition: 1s all ease;
+    
+    
+
+
+}
+
+.container .row .col-2 .btn:hover{
+    background-color: rgb(120, 46, 120);
+}
+
+/* RİNG-SECTİON */
+.col-2 .ring img{
+    margin-top: -100px;
+    width:100%;
+    max-width: 580px;
+    
+}
+#circle-ring{
+    padding-left: 130px;
+    padding-top: 60px;
+}
+.col-2 .ring{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: transparent;
+    border: 3px solid #cca2c3;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.col-2 .ring:before{
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 100%;
+    height: 100%;
+    border: 3px solid transparent;
+    border-top: 3px solid #72206e;
+    border-right: 3px solid #72206e;
+    border-radius: 50%;
+    z-index: -1;
+    animation: returnCircle 10s linear infinite;
+}
+
+.col-2 .ring .circle{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 4px;
+    background: transparent;
+    transform-origin: left;
+    animation: return 10s linear infinite;
+    z-index: -1;
+}
+.col-2 .ring .circle:before{
+    content: "";
+    position:absolute;
+    top: -6px;
+    right: -9px;
+    width: 16px;
+    height: 16px;
+    background: #72206e;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #72206e;
+    z-index: -1;
+}
+
+
+.col-2 .ring-two{
+    position: absolute;
+    top: 13%;
+    left: 56%;
+    width: 500px;
+    height: 500px;
+    background: transparent;
+    border: 3px solid #cca2c3;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+.col-2 .ring-two:before{
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 100%;
+    height: 100%;
+    border: 3px solid transparent;
+    border-bottom: 3px solid #72206e;
+    border-left: 3px solid #72206e;
+    border-radius: 50%;
+    animation: returnCircle2 10s linear infinite;
+}
+.col-2 .ring-two .circle-two{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 4px;
+    background: transparent;
+    transform-origin: left;
+    animation: return2 10s linear infinite;
+}
+.col-2 .ring-two .circle-two:before{
+    content: "";
+    position: absolute;
+    top: -6px;
+    right:-8px;
+    width: 16px;
+    height: 16px;
+    background: #72206e;
+    box-shadow: 0 0 20px #72206e;
+    border-radius: 50%;
+}
+@keyframes returnCircle {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+       transform: rotate(360deg); 
+    }
+}
+@keyframes return {
+    0%{
+        transform: rotate(45deg);
+    }
+    100%{
+       transform: rotate(405deg); 
+    }
+}
+
+
+@keyframes returnCircle2 {
+    0%{
+        transform: rotate(-45deg);
+    }
+    100%{
+       transform: rotate(-405deg); 
+    }
+}
+@keyframes return2 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+       transform: rotate(-360deg); 
+    }
+}
